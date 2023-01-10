@@ -1,0 +1,25 @@
+//JavaScript tiene varias formas de declarar variables
+
+const miPedidoCompleto = (valor) =>{
+    console.log(valor, 'Desde funcion miPedidoCompleto');
+}
+
+miPedidoCompleto('valor');
+
+const miPedidoCompleto2 = function miPedidoCompleto(valor){
+    console.log(valor, 'Desde funcion miPedidoCompleto');
+}
+
+miPedidoCompleto2('valor2');
+
+const miPedidoCompleto3 = function (valor){
+    console.log(valor, 'Desde funcion miPedidoCompleto');
+}
+
+miPedidoCompleto3('valor3');
+
+function miPedidoCompletoFuncion(valor){
+    console.log(valor, 'Desde funcion miPedidoCompleto');
+}
+
+miPedidoCompletoFuncion('valor funcion');
