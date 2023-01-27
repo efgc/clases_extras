@@ -1,0 +1,20 @@
+
+http://localhost:3000/productos
+GET (Se devolvera el listado total de productos)
+
+http://localhost:3000/productos/deporte
+GET (Se devolvera el listado de productos en la categoria deporte)
+
+http://localhost:3000/productos/cocina
+GET (Se devolvera el listado de productos en la categoria cocina
+
+http://localhost:3000/productos/cocina/1
+GET (Se devolvera el producto con el id 1 de la categoria cocina)
+
+http://localhost:3000/productos
+POST (crear una nueva categoria)
+POST (crear categorias, crear productos)
+PUT  (modificar productos)
+DELETE (eliminar productos)
+
+destructuracion

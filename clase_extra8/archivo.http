@@ -1,0 +1,11 @@
+GET http://localhost:3000
+###
+GET http://localhost:3000/HOLA
+###
+GET http://localhost:3000/productos
+###
+GET http://localhost:3000/productos/deporte
+###
+GET http://localhost:3000/productos/cocina
+###
+POST http://localhost:3000/productos/cocina
