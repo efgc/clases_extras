@@ -24,7 +24,6 @@ const SERVIDOR = HTTP.createServer((req, res) => {
     case 'GET':
       console.log(`Se recibio una peticion por ${method}`);
       return manejarPeticionGet(req, res);
-      break;
     default:
       res.statusCode = 501;
       console.log(`El metodo ${method} no esta implementado`);
@@ -57,5 +56,8 @@ function manejarPeticionGet(req, res) {
   } else if (PATH === '/productos/cocina') {
     res.setHeader('Content-Type', 'application/json');
     return res.end(JSON.stringify(PRODUCTOS.infoProductos.cocina));
+  }else{
+    res.statusCode = 404;
+    return res.end('<h1>404 No encontrado</h1>')
   }
 }
